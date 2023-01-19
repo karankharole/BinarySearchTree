@@ -20,6 +20,10 @@
             binary.Display();
             binary.GetSize();
             Console.ReadKey();
+
+            bool result = binary.IfExists(63, binary);
+            Console.WriteLine(result);
+            Console.ReadKey();
         }
     }
 }
