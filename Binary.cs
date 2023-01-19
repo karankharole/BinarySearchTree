@@ -23,7 +23,6 @@ namespace BinarySearchTreeNew
 
         }
         int leftCount = 0, rightCount = 0;
-        bool result = false;
         public void Add(T item)
         {
             T currentNodeValue = this.NodeData;
@@ -47,6 +46,8 @@ namespace BinarySearchTreeNew
                     this.rightTree.Add(item);
             }
         }
+
+
         public void Display()
         {
             if (this.leftTree != null)
@@ -60,6 +61,10 @@ namespace BinarySearchTreeNew
                 this.rightCount++;
                 this.rightTree.Display();
             }
+        }
+        public void GetSize()
+        {
+            Console.WriteLine("Size" + " " + (1 + this.leftCount + this.rightCount));
         }
     }
 }
